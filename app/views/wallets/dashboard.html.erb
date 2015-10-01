@@ -1,0 +1,15 @@
+<h1> Total Exchanges </h1>
+
+<% if @amount < 0 %>
+<p> YOU BROKE, BROKE, BROKE, PHY BROKE, YOU AIN'T GOT IT!! </p>
+
+<% else %>
+
+<p> Your total exchanges are:   <%= @total %> </p>
+
+<p> Your total amount for the exchanges is:  <%= @amount %> </p>
+
+<%= link_to 'New Wallet', new_wallet_path %>
+<%= link_to 'Wallets', wallets_path %>
+
+<% end %>

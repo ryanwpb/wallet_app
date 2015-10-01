@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @wallet.amount %>
+</p>
+
+<p>
+  <strong>Exchange type:</strong>
+  <%= @wallet.exchange_type %>
+</p>
+
+<p>
+  <strong>Recipient:</strong>
+  <%= @wallet.recipient %>
+</p>
+
+<%= link_to 'Edit', edit_wallet_path(@wallet) %> |
+<%= link_to 'Back', wallets_path %>
